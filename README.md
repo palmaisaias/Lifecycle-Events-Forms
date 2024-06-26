@@ -1,8 +1,27 @@
-# React + Vite
+# Marvel API Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This assignment links up to the Marvel API and presents Marvel characters in a great format. Every character appears in a card with the image of the character along with its name. This card is presented through the **Character List** component.
 
-Currently, two official plugins are available:
+## Components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Character List Component
+- Displays a list of Marvel characters.
+- Each character appears in a card format with:
+  - Character image
+  - Character name
+
+### Character Details Component
+- A secondary component named **Character Details** is added to make a second call to the API.
+- This component pulls relevant character details and is executed within the Character List component.
+
+## User Interaction
+
+- Users can click on any character card to see detailed information.
+- Upon clicking, the Character Details component is activated, showing:
+  - Character name
+  - Character description (if available)
+  - Comics in which the character has appeared
+
+## Summary
+
+By integrating these components, users can browse through a list of Marvel characters and click on any character to view detailed information, providing a seamless and interactive experience.
